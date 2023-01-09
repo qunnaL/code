@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css"/>
+	<title>Log in</title>
+</head>
+
+<body>
+
+<div class="bg">	
+	<p id="picFrom">Photo by <span style="text-decoration: underline;">Pawel Czerwinski</span> on <span style="text-decoration: underline;">Upsplash</span></p>		
+</div>
+
+<div class="logo">
+	<h2 id="odin">ODIN</h2>
+</div>
+
+<div class="toptext">
+	<p>This is not a real online service! You know you need something like this in your lift to help you realize your deepest dreams.</p>
+	<p>Sign up <em>now</em> to get started.</p>
+	<p>you <em>know</em> you want to.</p>
+</div>
+
+
+
+		<div class="right">
+			<h2 id="intro">Let's do this!</h2>
+				<form action="#" method="get" name="name1">
+				<div class="display">
+
+					<div class="inputs">
+					<label for="FN">FIRST NAME</label> 
+					<input type="text" name="First Name" id="LN">	
+					</div>
+
+					<div class="inputs">
+					<label for="LN">LAST NAME</label>
+					<input type="text" name="Last Name" id="LN">
+					</div>
+
+					<div class="inputs">
+					<label for="EMAIL">EMAIL</label>
+					<input type="email" name="email" id="EMAIL">
+					</div>
+
+					<div  class="inputs">
+					<label for="PN">PHONE NUMBER</label>
+					<input type="tel" name="tel" id="PH">
+					</div>
+
+					<div class="inputs" >
+					<label for="PW">PASSWORD</label>
+					<input type="password" onkeyup="active()" placeholder="At least 6" maxlength="12" name="password" id="PW">
+					</div>
+				
+					<div class="inputs">
+					<label for="CPW">CONFIRM PASSWORD</label>
+					<input type="password" maxlength="12" name="password repeat" id="CPW">
+					</div>
+					
+					<div class= "erro-text"></div>
+
+				</div>	
+		</div>		
+	
+			
+
+				<div class="left button">
+				<button disabled="disabled" type="submit" class="bt">Create Account</button>
+				</div>
+
+				</form>
+			
+		<div class="downtext">
+		<span id="h4">Alreay have an account?</span> <a href="zample.html">Log in</a>
+		</div>
+
+			<div class="show">show<div>
+
+</body>
+<script src="main.js"></script>
+</html>
