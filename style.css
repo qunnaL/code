@@ -1,0 +1,335 @@
+/* web */
+
+body{
+    background-color:rgba(242, 242, 241, 0.908);
+}
+
+/* left side include the pic, logo, the while space behind the logo*/
+
+.bg{
+   
+	background-image: url(image/home.jpg);
+    position: absolute;
+    left:0;
+    top:0;
+    margin:0px;
+    padding:0px;
+    width: 600px;
+    height:100%;
+    background-size: cover;
+}
+.logo{
+    
+	background-color:rgba(141, 141, 141, 0.251);
+    position: relative;
+    top: 283px;
+    left: -10px;
+	background-image: url(image/odin-lined.png);
+    width: 600px;
+    height:100px;
+    background-repeat: no-repeat;
+    background-position-x: 160px;
+    background-position-y: 2px;
+    background-size: 12% auto; 
+}
+
+#odin{
+    color:rgba(255, 255, 255, 0.968);
+    padding-top: 10px;
+    padding-left: 230px;
+    font-style: oblique;
+    font-size: 60px;
+}
+
+#picFrom{
+    text-align: center;
+    margin-top:720px;
+    font-size: 5px;
+    color: rgba(0, 0, 0, 0.621);
+}
+
+
+
+
+/*right side*/
+/*.bt{
+    cursor: no-drop;
+}*/
+
+.toptext{
+    margin-top:-80px;
+    padding:0%;
+    margin-left: 628px;
+    color: rgba(2, 2, 2, 0.544);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.erro-text{
+    position: relative;
+    font-weight:bold;
+    font-size: 10px;
+    margin-top:0px;
+}
+
+#intro{
+    display: block;
+    margin-top: 0px;
+    color: #a13e01;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 35px;
+    letter-spacing: 1px; 
+    grid-column: span 2;
+}
+
+.downtext{
+    margin-top:20px;
+    margin-left: 628px;
+    color: rgba(2, 2, 2, 0.544);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.display{
+    background-color: rgb(253, 253, 253); 
+    width: 803px;
+    height: 220px;
+    position:relative;
+    left:592px;
+    box-shadow: 0px 6.5px 7px rgba(152, 53, 0, 0.469);
+    padding: 2rem 2vw 1.5rem 2vw;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+   
+}
+
+.inputs{
+    padding-bottom: 10px;
+    font-size: 10px;
+    position: relative;
+}
+
+.inputs input{
+    width: 290px;
+    height: 20px;
+    display: flex;
+    justify-content:space-evenly;
+    outline: none;
+    border-radius: 10px;
+    border: 1.2px solid rgb(230, 139, 3);
+}
+
+input:focus{
+    border-color: rgb(240, 82, 25);
+    box-shadow: 0 0 2px #f95f00;
+}
+
+.left button{
+    background-color: rgb(184, 106, 33);
+    margin-top:45px;
+    margin-left:628px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    border-style: none;
+    border-radius: 7px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color: rgb(255, 255, 255);
+}
+
+.show{
+    position:absolute;
+    right:146px;
+    top:417px;
+    user-select: none;
+}
+
+label p{
+    position:absolute;
+    right:110px;
+    bottom: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+label{
+    color: rgb(195, 94, 0);
+    font-size: 11px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.res{
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.res ul{
+    background-color: #742d01e2;
+    margin: 0;
+    padding:10px;
+    position:fixed;
+    right:39%;
+    width: 240px;
+    top:485px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 28px;
+    list-style: none;
+    
+}
+
+.res ul li.valid{
+    color: #25c900;
+    transition: 0.4s;
+}
+
+
+/*phone*/
+
+@media screen and (max-width:960px){
+    body{
+        overflow: hidden;
+    }
+    
+    .bg{
+        position: absolute;
+        left:0;
+        top:0;
+        margin:0px;
+        padding:0px;
+        width: 390px;
+        height: 100%;
+        background-size:cover;
+    }
+
+    .logo{
+        padding: 0;
+        background-color: transparent;
+        width: 80px;
+        height: 80px;
+        left:50%;
+        background-position-x: 0px;
+        background-size:50%;
+        margin: 0;
+        position: absolute;
+        top: 0px;
+        left: 30%;
+        right: 50px;
+        bottom: 50px;
+    }
+    
+    #odin{
+        position: relative;
+        color:rgba(255, 255, 255, 0.968);
+        width: 10%;
+        height: fit-content;
+        font-size: 20px;
+        padding-top: 0;
+        left: 70%;
+        padding-left:0%;
+        
+    }
+    
+    #picFrom{
+        margin:0;
+        position: absolute;
+        top:90%;
+        left:20%
+    }
+    
+    
+    
+    
+    /*right side*/
+    .toptext{
+        position: absolute;
+        width: 250px;
+        margin-top:0;
+        margin-left: 0;
+        font-size: 9px;
+        color:rgb(33, 31, 31);
+        top: 8%;
+        left: 20%;
+    }
+    
+    .erro-text{
+        width: 200px;
+    }
+    
+    #intro{
+        color: #ffffff;
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-left: 0%;
+        letter-spacing: 2px;
+    }
+    
+    .downtext{
+        position: absolute;
+        margin:0px;
+        top: 75%;
+        left: 20%;
+    }
+    
+    .right{
+        background-color:transparent;
+        position: absolute;
+        width: 294px;
+        height: fit-content;
+        box-shadow:none;
+        padding: 0;
+        margin: 0;
+        top: 23%;
+        left: 20%;
+    }
+    
+    .display{
+        width:280px;
+        grid-template-columns: 100px;
+    }
+
+    .inputs{
+        width: 290px;
+        padding-bottom: 6px;
+        font-size: 5px;
+        margin-top: 6px;
+    }
+    
+    .inputs input{
+        width: 220px;
+        height: 20px;
+        border: 1.2px solid rgb(236, 151, 23);
+    }
+    
+    input:focus{
+        border-color: rgb(248, 72, 8);
+        box-shadow: 0 0 3px #f95f00;
+    }
+    
+    form{
+        display: grid;
+    }
+    
+
+    
+    label{
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 1px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
